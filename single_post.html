@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Stylesheet -->
+    <link href="css/vendor/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/vendor/fontawesome.css" />
+    <link rel="stylesheet" href="css/vendor/brands.css" />
+    <link rel="stylesheet" href="css/vendor/regular.css" />
+    <link rel="stylesheet" href="css/vendor/solid.css" />
+    <link rel="stylesheet" href="css/vendor/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Raffein - Single Post</title>
+  </head>
+
+  <body>
+    <script src="js/vendor/bootstrap.bundle.min.js"></script>
+    <script src="js/vendor/jquery.min.js"></script>
+    <script src="js/vendor/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/swiper-script.js"></script>
+    <script src="js/submit-form.js"></script>
+    <script src="js/vendor/isotope.pkgd.min.js"></script>
+
+    <!-- Header -->
+    <section class="sticky-top bg-accent-color section-border-navbar">
+      <div class="">
+        <nav class="navbar navbar-expand-lg">
+          <div
+            class="mx-auto d-flex w-100 justify-content-between justify-content-lg-center"
+          >
+            <a class="navbar-brand border-end border-1" href="#">
+              <div class="logo-container">
+                <img src="image/logo1.png" alt="" class="img-logo img-fluid" />
+              </div>
+            </a>
+            <div class="my-auto px-3 px-xl-5 d-none d-lg-block">
+              <ul
+                class="navbar-nav mx-auto mb-2 mb-lg-0 font-1 fw-lighter gap-lg-3"
+              >
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="index.html"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about_us.html">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Product
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item nav-link" href="product.html"
+                        >Product</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item nav-link"
+                        href="product_detail.html"
+                        >Product Detail</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Page
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item nav-link" href="partnership.html"
+                        >Partnership</a
+                      >
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-link" href="faq.html">FAQ</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item nav-link" href="404.html"
+                        >Error 404</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle active"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Blog
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item nav-link" href="archive.html"
+                        >Archive</a
+                      >
+                    </li>
+                    <li>
+                      <a
+                        class="dropdown-item nav-link active"
+                        href="single_post.html"
+                        >Single Post</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <a
+              class="border-start border-1 d-none d-lg-block my-auto navbar-button"
+              href="#"
+            >
+              <button class="bg-accent-color-1 button-shrink">
+                <p class="mb-0 fs-6 px-3 px-xl-5 fw-medium">Shop Now</p>
+              </button>
+            </a>
+            <button
+              class="navbar-toggler accent-color border-0 me-4 h-100 my-auto p-2"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <i class="fa-solid fa-bars-staggered text-white"></i>
+            </button>
+          </div>
+        </nav>
+        <div
+          class="my-auto px-3 px-xl-5 d-lg-none border-top border-1 navbar-expand-sm"
+          id="navbarSupportedContent"
+        >
+          <ul
+            class="navbar-nav justify-content-evenly pt-2 mx-auto mb-2 mb-lg-0 font-1 fw-lighter gap-lg-3"
+          >
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about_us.html">About</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Product
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item nav-link" href="product.html"
+                    >Product</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="product_detail.html"
+                    >Product Detail</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Page
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item nav-link" href="partnership.html"
+                    >Partnership</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="faq.html">FAQ</a>
+                </li>
+                <li>
+                  <a class="dropdown-item nav-link" href="404.html"
+                    >Error 404</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle active"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item nav-link" href="archive.html"
+                    >Archive</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item nav-link active"
+                    href="single_post.html"
+                    >Single Post</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- End  of Header -->
+
+    <main>
+      <!-- Banner -->
+      <section
+        class="section-3 img-banner position-relative"
+        style="background-image: url(image/blog1.jpg)"
+      >
+        <div class="r-container">
+          <div class="image-overlay-2"></div>
+          <div
+            class="position-relative text-center justify-content-center d-flex flex-column"
+            style="z-index: 2"
+          >
+            <h2 class="font-2 fw-semibold text-white">Single Post</h2>
+            <nav aria-label="breadcrumb" class="d-flex justify-content-center">
+              <ol class="breadcrumb fw-light">
+                <li class="breadcrumb-item">
+                  <a href="index.html">Homepage</a>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  Single Post
+                </li>
+              </ol>
+            </nav>
+          </div>
+        </div>
+      </section>
+
+      <!-- Single Post -->
+      <section class="section section-aboutus bg-accent-color">
+        <div class="container-fluid">
+          <div class="row row-cols-1 row-cols-lg-2">
+            <div
+              class="col col-lg-8 section-border-aboutus-first d-flex justify-content-end position-relative py-5"
+            >
+              <div
+                class="position-relative d-flex flex-column h-100"
+                style="max-width: 930px"
+              >
+                <div class="d-flex flex-column gap-3">
+                  <img
+                    src="image/blog2.jpg"
+                    alt=""
+                    class="img-fluid img-aboutus"
+                  />
+                  <h4 class="font-2 text-white">
+                    The Special Taste Of Civet Coffee
+                  </h4>
+                  <p class="font-1 text-gray">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Praesent non lorem sed justo faucibus sagittis. Suspendisse
+                    elementum vehicula leo, quis accumsan est. Aenean aliquam,
+                    lacus non scelerisque commodo, sapien tortor cursus mauris,
+                    a eleifend dolor nisl in enim. Phasellus vestibulum, nibh
+                    non lacinia pretium, ipsum magna consectetur diam, vel
+                    gravida elit nisi nec ipsum. Morbi vel mattis turpis.
+                    <br /><br />
+                    Morbi aliquet tincidunt nibh ac vestibulum. Nullam efficitur
+                    quam sed blandit eleifend. Nulla ac sagittis diam, mattis
+                    varius nisi. Curabitur dapibus felis quis ligula sodales
+                    consectetur. Proin vel ante sed arcu convallis vestibulum.
+                    Morbi vitae risus vitae eros auctor volutpat et at eros.
+                    Vivamus ac ligula et justo dictum posuere in in risus. Nulla
+                    sit amet augue tempor, malesuada augue et, pretium metus. In
+                    condimentum volutpat diam ut tristique. Maecenas ut sodales
+                    felis.
+                  </p>
+                </div>
+                <div class="text-white">
+                  <ul class="row row-cols-1 row-cols-lg-2 p-0 row-gap-2">
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                    <li class="col d-flex flex-row gap-2 align-items-center">
+                      <i class="fa-solid fa-check"></i>
+                      Praesent non lorem sed justo faucibus sagittis.
+                    </li>
+                  </ul>
+                </div>
+                <div class="d-flex flex-column">
+                  <p class="text-gray">
+                    Curabitur ac ipsum suscipit, porttitor erat et, congue est.
+                    Donec ultrices posuere erat et laoreet. Cras sed metus et
+                    neque condimentum suscipit nec ac eros. Curabitur eget
+                    scelerisque ligula. Praesent auctor ipsum nec nisi placerat,
+                    scelerisque luctus purus fringilla. Aliquam commodo varius
+                    imperdiet. Orci varius natoque penatibus et magnis dis
+                    parturient montes, nascetur ridiculus mus. Praesent rutrum
+                    posuere venenatis. Cras iaculis gravida risus in semper.
+                    Quisque eget egestas enim. Morbi id lacus nec massa blandit
+                    ullamcorper sit amet vel odio. Fusce urna neque, sagittis
+                    pharetra purus in, auctor pharetra eros. Duis tristique
+                    commodo libero, varius gravida felis vehicula at. Mauris
+                    lobortis tincidunt sem quis maximus. Donec in eros metus.
+                  </p>
+                  <div
+                    class="d-flex flex-row gap-3 align-items-center justify-content-end"
+                  >
+                    <span class="text-white fw-bold">Share This:</span>
+                    <div class="d-flex">
+                      <button class="btn share-button" data-platform="facebook">
+                        <i class="fa-brands fa-facebook-f text-white"></i>
+                      </button>
+                      <button
+                        class="btn share-button"
+                        data-platform="instagram"
+                      >
+                        <i class="fa-brands fa-instagram text-white"></i>
+                      </button>
+                      <button class="btn share-button" data-platform="whatsapp">
+                        <i class="fa-brands fa-whatsapp text-white"></i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col col-lg-4 section-border-aboutus-last">
+              <div
+                class="d-flex flex-column gap-3 gap-4 gap-lg-5 p-4 p-md-5 search-section-sizing"
+              >
+                <form class="form">
+                  <div class="input-group border overflow-hidden">
+                    <input
+                      type="text"
+                      class="form-control px-4 border-0"
+                      placeholder=""
+                      aria-label="Example text with button addon"
+                      aria-describedby="button-addon1"
+                    />
+                    <button
+                      class="btn border-0"
+                      type="button"
+                      id="button-addon1"
+                    >
+                      <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                  </div>
+                </form>
+                <div
+                  class="border border-1 p-4 d-flex flex-column justify-content-center gap-3"
+                  style="--bs-border-color: var(--white-color)"
+                >
+                  <h5 class="font-2 fw-bold mb-3 text-white">Recent Post</h5>
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex gap-3">
+                      <img
+                        src="image/blog2.jpg"
+                        class="search-content-img"
+                        alt="..."
+                      />
+                      <div class="d-flex flex-column gap-1">
+                        <a href="" class="text-white h5 lh-1 font-1 fw-bold"
+                          >The Special Taste Of Civet Coffee</a
+                        >
+                        <div class="d-flex flex-row gap-4 align-items-center">
+                          <div
+                            class="d-flex gap-2 align-items-center"
+                            style="color: #7f8595"
+                          >
+                            <i class="fa-regular fa-calendar"></i>
+                            18 Jun 2022
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <img
+                        src="image/blog1.jpg"
+                        class="search-content-img"
+                        alt="..."
+                      />
+                      <div class="d-flex flex-column gap-1">
+                        <a href="" class="text-white lh-1 font-1 fw-bold"
+                          >Comes First At Raffein Robusta In Chicago</a
+                        >
+                        <div class="d-flex flex-row gap-4 align-items-center">
+                          <div
+                            class="d-flex gap-2 align-items-center"
+                            style="color: #7f8595"
+                          >
+                            <i class="fa-regular fa-calendar"></i>
+                            18 Jun 2022
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="d-flex gap-3">
+                      <img
+                        src="image/blog4.jpg"
+                        class="search-content-img"
+                        alt="..."
+                      />
+                      <div class="d-flex flex-column gap-1">
+                        <a href="" class="text-white lh-1 font-1 fw-bold"
+                          >Raffein Coffee Gets An Award For The Best Coffee</a
+                        >
+                        <div class="d-flex flex-row gap-4 align-items-center">
+                          <div
+                            class="d-flex gap-2 align-items-center"
+                            style="color: #7f8595"
+                          >
+                            <i class="fa-regular fa-calendar"></i>
+                            18 Jun 2022
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="position-relative border"
+                  style="background-image: url(image/coffee-production1.jpg)"
+                >
+                  <div class="absolute-section"></div>
+
+                  <div class="position-relative section-discount">
+                    <h4 class="font-2 lh-1 fw-bold text-white">
+                      Discount All Item For Raffein Partnership
+                    </h4>
+                    <p class="text-gray">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                    <div>
+                      <button
+                        type="button"
+                        href="#"
+                        class="bg-accent-color-1 button-shrink"
+                      >
+                        <i class="fa-solid fa-arrow-right"> Contact Us</i>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="border border-1 p-4 d-flex flex-column justify-content-center gap-3"
+                  style="--bs-border-color: var(--white-color)"
+                >
+                  <h5 class="font-2 fw-bold mb-3 text-white">
+                    Our Social Media
+                  </h5>
+                  <div class="d-flex flex-column gap-3">
+                    <div class="d-flex flex-column gap-3">
+                      <div class="d-flex flex-row gap-4 align-items-center">
+                        <div
+                          onclick="location.href='https://www.facebook.com';"
+                          class="d-flex gap-3 align-items-center text-white"
+                          style="cursor: pointer"
+                        >
+                          <i class="fa-brands fa-facebook-f"></i>
+                          Facebook/raffein.coffee
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-4 align-items-center">
+                        <div
+                          onclick="location.href='https://www.instagram.com';"
+                          class="d-flex gap-3 align-items-center text-white"
+                          style="cursor: pointer"
+                        >
+                          <i class="fa-brands fa-instagram"></i>
+                          Instagram/raffein.coffee
+                        </div>
+                      </div>
+                      <div class="d-flex flex-row gap-4 align-items-center">
+                        <div
+                          onclick="location.href='https://www.twitter.com';"
+                          class="d-flex gap-3 align-items-center text-white"
+                          style="cursor: pointer"
+                        >
+                          <i class="fa-brands fa-twitter"></i>
+                          Twitter/raffein.coffee
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section class="bg-accent-color-2 section-footer">
+        <div class="row justify-content-center row-cols-1 row-cols-md-2">
+          <div class="col col-lg-3 p-3 p-sm-4">
+            <div class="d-flex flex-column gap-1 gap-lg-3 text-white">
+              <div class="logo-container">
+                <img src="image/logo1.png" alt="" class="img-fluid" />
+              </div>
+              <p class="font-1">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam
+                odio, corporis similique quidem quam maxime possimus?
+              </p>
+              <div class="social-container">
+                <a href="https://www.facebook.com" class="social-item">
+                  <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://www.twitter.com" class="social-item">
+                  <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://www.tiktok.com" class="social-item">
+                  <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.instagram.com" class="social-item">
+                  <i class="fa-brands fa-instagram"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-2 p-3 p-sm-4 font-1">
+            <div class="d-flex flex-column">
+              <h5 class="font-1 fw-bold mb-3 accent-color-1">Page</h5>
+              <div class="d-flex flex-column gap-2">
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  Home</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  About</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  Product</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  Blog Post</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-2 p-3 p-sm-4 font-1">
+            <div class="d-flex flex-column">
+              <h5 class="font-1 fw-bold mb-3 accent-color-1">Information</h5>
+              <div class="d-flex flex-column gap-2">
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  FAQ</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  Client Support</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  Terms & Condition</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i
+                    class="fa-solid fa-arrow-right"
+                    style="color: #cccccc"
+                  ></i>
+                  Privacy Police</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="col col-lg-3 p-3 p-sm-4 font-1">
+            <div class="d-flex flex-column">
+              <h5 class="font-1 fw-bold mb-3 accent-color-1">Contact Info</h5>
+              <div class="d-flex flex-column gap-2">
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i class="fa-solid fa-phone"></i> 000 012 345 678</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i class="fa-solid fa-envelope"></i> yoursite@mail.com</a
+                >
+                <a
+                  href=""
+                  class="d-flex flex-row gap-2 align-items-center link-light"
+                  ><i class="fa-solid fa-location-dot"></i> 99 Rroving Street,
+                  Big City, Pku</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="container-fluid bg-accent-color-2">
+        <div class="w-100" style="border-bottom: 1px solid white"></div>
+        <div class="text-center p-2 text-white font-1">
+          © Copyright 2023. All Rights Reserved. Rometheme
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/vendor/fslightbox.js"></script>
+    <script src="js/masonry.js"></script>
+  </body>
+</html>
