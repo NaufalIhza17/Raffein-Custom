@@ -35,3 +35,33 @@ $(window).ready(function () {
     }
   });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+  const defaultSizeElement = document.querySelector('.size-option[data-size="500"]');
+  defaultSizeElement.classList.add('text-orange');
+
+  const defaultPrice = '$9.75';
+  document.getElementById('product-price').textContent = defaultPrice;
+});
+
+function selectSize(event) {
+  const clickedElement = event.target;
+
+  if (clickedElement.classList.contains('size-option')) {
+    const selectedSize = clickedElement.getAttribute('data-size');
+    const priceElement = document.getElementById('product-price');
+
+    if (selectedSize === '500') {
+      priceElement.textContent = '$9.75';
+    } else if (selectedSize === '1000') {
+      priceElement.textContent = '$18.50';
+    }
+
+    const sizeOptions = document.querySelectorAll('.size-option');
+    sizeOptions.forEach(option => {
+      option.classList.remove('text-orange');
+    });
+
+    clickedElement.classList.add('text-orange');
+  }
+}
